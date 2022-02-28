@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: Raleway;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.head_bar {
+    padding: 16px;
+    text-align: center;
+    background-color: #5F30E2;
+    color: white;
+    margin: 0 0 16px 0;
+    border-radius: 5px;
+}
+
+main {
+    min-height: 200px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+
+.shadow {
+	box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2);
+}
+
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+
+.input_section > h2 {
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+}
+
+.input_section > form > button {
+    color: black;
+    border:2px solid #5F30E2;
+    border-radius: 5px;
+    background-color: #F5F1FF;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.input_section > form > button:hover {
+	background: #5F30E2;
+    color: white;
+}
+
+.input_section > form > .input > input {
+	background: #F5F1FF;
+	border: 2px solid #9475EA;
+	border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+}
+
+.input_section > form > .input > input:focus {
+	outline: none;
+}
+
+.input_section > form > .input > label {
+    color: #000;
+    font-weight: lighter;
+}
+
+.input_section > form > .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: #000;
+    font-weight: lighter;
+    margin-right: 10px;
+}
+
+.search_section {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.search_section > h2 {
+    color: #000;
+    font-weight: bold;
+}
+
+.search_section > form {
+    padding: 16px 0 16px 0;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 7px;
+    width: 100%;
+}
+
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section > form > input {
+    padding: 5px;
+    background: #F5F1FF;
+	border: 2px solid #9475EA;
+    border-radius: 5px;
+}
+
+.search_section > form > input:focus {
+	outline: none;
+}
+
+.search_section > form > button {
+    color: #000;
+    border:2px solid #5F30E2;
+    background-color: #F5F1FF;
+    border-radius: 5px;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+}
+
+.search_section > form > button:hover {
+	background: #5F30E2;
+    color: white;
+}
+
+
+hr {
+	border-width: 2px;
+	color: #5F30E2;
+	background-color: #5F30E2;
+}
+
+.book_shelf {
+    margin: 16px 0 0 0;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.book_shelf > h2 {
+    color: #000;
+    font-weight: bold;
+}
+
+.book_shelf > .book_list {
+    padding: 16px;
+}
+
+.book_shelf > .book_list > .book_item {
+    padding: 8px 16px 16px 16px;
+}
+
+.book_shelf > .book_list > .book_item > h3, p {
+    margin: 8px 0;
+}
+
+.book_shelf > .book_list > .book_item > .action > button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer {
+	background-color: #5F30E2;
+	border-radius: 5px;
+	padding: 10px 10px 5px 10px;
+	margin: 16px 0 0 0;
+}
+
+.footer h4 {
+	color: white;
+	text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    width: 95%;
+  }
+  
+  .search_section > form > input {
+  	width: 100%;
+  }
+}
